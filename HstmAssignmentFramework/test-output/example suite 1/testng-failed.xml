@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [example suite 1]">
+  <test thread-count="5" name="Regression suite 1(failed)">
+    <classes>
+      <class name="com.hstm.assignment.flux1.testcases.AddStudentTest">
+        <methods>
+          <include name="initialSetUp"/>
+          <include name="successfulStdntAddingTest"/>
+          <include name="closeBrowser"/>
+        </methods>
+      </class> <!-- com.hstm.assignment.flux1.testcases.AddStudentTest -->
+      <class name="com.hstm.assignment.flux1.testcases.AddCourseTest">
+        <methods>
+          <include name="closeBrowser"/>
+          <include name="initialSetUp"/>
+          <include name="successfulCrsAddingTest"/>
+        </methods>
+      </class> <!-- com.hstm.assignment.flux1.testcases.AddCourseTest -->
+    </classes>
+  </test> <!-- Regression suite 1(failed) -->
+</suite> <!-- Failed suite [example suite 1] -->

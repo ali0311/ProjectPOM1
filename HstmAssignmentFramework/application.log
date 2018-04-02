@@ -1,0 +1,6 @@
+2018-04-02 13:06:14,372  INFO [main] AdminLoginPageTest:38 - ********Initializing*******
+2018-04-02 13:06:35,679  INFO [main] AdminLoginPageTest:47 - ********Add Stdudent Details_TC#1*******
+2018-04-02 13:06:46,343  INFO [main] AdminLoginPageTest:47 - ********Add Stdudent Details_TC#1*******
+2018-04-02 13:06:52,683  INFO [main] AdminLoginPageTest:47 - ********Add Stdudent Details_TC#1*******
+2018-04-02 13:06:59,991  INFO [main] AdminLoginPageTest:57 - ********Successful Stdudent Adding Test_TC#2*******
+2018-04-02 13:07:00,026  INFO [main] AdminLoginPageTest:65 - ********Closing Browser...New class ManageStudentPageTest Test Begins*******

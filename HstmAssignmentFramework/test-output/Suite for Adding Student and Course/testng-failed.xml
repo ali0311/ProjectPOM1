@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite for Adding Student and Course]">
+  <test thread-count="5" name="Add Student(failed)">
+    <classes>
+      <class name="com.hstm.assignment.flux1.testcases.AddStudentTest">
+        <methods>
+          <include name="initialSetUp"/>
+          <include name="addStudentDetailsTest"/>
+          <include name="successfulStdntAddingTest"/>
+          <include name="closeBrowser"/>
+        </methods>
+      </class> <!-- com.hstm.assignment.flux1.testcases.AddStudentTest -->
+    </classes>
+  </test> <!-- Add Student(failed) -->
+  <test thread-count="5" name="Add Course(failed)">
+    <classes>
+      <class name="com.hstm.assignment.flux1.testcases.ManageStudentPageTest">
+        <methods>
+          <include name="validateUserLabelTest"/>
+          <include name="initialSetUp"/>
+          <include name="closeBrowser"/>
+        </methods>
+      </class> <!-- com.hstm.assignment.flux1.testcases.ManageStudentPageTest -->
+    </classes>
+  </test> <!-- Add Course(failed) -->
+</suite> <!-- Failed suite [Suite for Adding Student and Course] -->

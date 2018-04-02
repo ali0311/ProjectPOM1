@@ -1,4 +1,4 @@
-package com.hstm.assignment.flux1.testcases;
+package com.hstm.assignment.util;
 
 import org.apache.commons.mail.EmailAttachment;
 import org.apache.commons.mail.EmailException;

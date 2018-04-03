@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Sanity Testing- Assignment WorkFlow">
+
+	<listeners>
+		<listener class-name="com.hstm.ExtentReportListner.ExtentReporterNG" />
+	</listeners>
+	
+	<test name="Login Page">
+		<classes>
+			<class name="com.hstm.assignment.flux1.testcases.AdminLoginPageTest" />
+		</classes>
+	</test>
+	
+	<test name="Home Page">
+		<classes>
+			<class name="com.hstm.assignment.flux1.testcases.AdminHomePageTest" />
+		</classes>
+	</test>
+	
+	<test name="Search Acme Affiliation">
+		<classes>
+			<class name="com.hstm.assignment.flux1.testcases.SearchAffiliationPageTest" />
+		</classes>
+	</test>
+	
+	<test name="Add Student">
+		<classes>
+			<class name="com.hstm.assignment.flux1.testcases.AddStudentTest" />
+		</classes>
+	</test>
+
+	<test name="Search Student">
+		<classes>
+			<class name="com.hstm.assignment.flux1.testcases.ManageStudentPageTest" />
+		</classes>
+	</test>
+
+	<test name="Add Course">
+		<classes>
+			<class name="com.hstm.assignment.flux1.testcases.AddCourseTest" />
+		</classes>
+	</test>
+	
+	<test name="Add Assignment">
+		<classes>
+			<class name="com.hstm.assignment.flux1.testcases.AddAssignmentTest" />
+		</classes>
+	</test>
+	
+	
+</suite>
+
+
+
+
+
+

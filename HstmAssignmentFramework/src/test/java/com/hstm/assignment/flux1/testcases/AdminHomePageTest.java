@@ -124,14 +124,5 @@ public class AdminHomePageTest extends TestBase {
 		driver.quit();
 	}
 	
-	@AfterSuite
-	public void mailMyReport(){
-		FrameworkUtil f= new FrameworkUtil();
-		f.sendMail();
-	}
-	
-	
-	
-	
 	
 }

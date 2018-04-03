@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Sanity Testing- Assignment WorkFlow]">
+  <listeners>
+    <listener class-name="com.hstm.ExtentReportListner.ExtentReporterNG"/>
+  </listeners>
+  <test thread-count="5" name="Login Page(failed)">
+    <classes>
+      <class name="com.hstm.assignment.flux1.testcases.AdminLoginPageTest">
+        <methods>
+          <include name="closeBrowser"/>
+          <include name="loginPageTitleTest"/>
+          <include name="initialSetUp"/>
+          <include name="loginTest"/>
+        </methods>
+      </class> <!-- com.hstm.assignment.flux1.testcases.AdminLoginPageTest -->
+    </classes>
+  </test> <!-- Login Page(failed) -->
+</suite> <!-- Failed suite [Sanity Testing- Assignment WorkFlow] -->

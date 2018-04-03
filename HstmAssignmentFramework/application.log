@@ -1,6 +1,5 @@
-2018-04-02 13:06:14,372  INFO [main] AdminLoginPageTest:38 - ********Initializing*******
-2018-04-02 13:06:35,679  INFO [main] AdminLoginPageTest:47 - ********Add Stdudent Details_TC#1*******
-2018-04-02 13:06:46,343  INFO [main] AdminLoginPageTest:47 - ********Add Stdudent Details_TC#1*******
-2018-04-02 13:06:52,683  INFO [main] AdminLoginPageTest:47 - ********Add Stdudent Details_TC#1*******
-2018-04-02 13:06:59,991  INFO [main] AdminLoginPageTest:57 - ********Successful Stdudent Adding Test_TC#2*******
-2018-04-02 13:07:00,026  INFO [main] AdminLoginPageTest:65 - ********Closing Browser...New class ManageStudentPageTest Test Begins*******
+2018-04-03 19:03:27,149  INFO [main] AdminLoginPageTest:40 - ********Initializing*******
+2018-04-03 19:04:10,739  INFO [main] AdminLoginPageTest:53 - ********Get Data From Excel*******
+2018-04-03 19:04:11,146  INFO [main] AdminLoginPageTest:62 - ********Add Assignment Test*******
+2018-04-03 19:04:27,763  INFO [main] AdminLoginPageTest:72 - ********Validate Successful Test*******
+2018-04-03 19:04:27,882  INFO [main] AdminLoginPageTest:81 - ********Closing Browser...New class AddAssignmentTest Test Begins*******

@@ -1,3 +1,7 @@
+/*
+ * @Author Ali
+ * @Version 1.0
+ */
 package com.hstm.assignment.flux1;
 
 import java.util.ArrayList;
@@ -79,8 +83,9 @@ public class AddStudent extends TestBase {
 	// Actions
 
 	public void storeAllStudentData() throws Exception{
+		String studentDataPath = System.getProperty("user.dir") + "//src//main//java//com//hstm//assignment//testdata//StudentData.xlsx";
 		
-		fUtil.WriteStudentDataToExcel("D://javaworkspace//HstmAssignmentFramework//src//main//resources//StudentData.xlsx");
+		fUtil.WriteStudentDataToExcel(studentDataPath);
 	}
 	
 	public String addStudentDetail() {

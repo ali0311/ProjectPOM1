@@ -66,7 +66,6 @@ public class AddAssignmentTest extends TestBase {
 	}
 	
 	
-	
 	@Test(priority=2)
 	public void validateSuccessfulMessageTest(){
 		

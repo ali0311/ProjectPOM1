@@ -1,3 +1,7 @@
+/*
+ * @Author Ali
+ * @Version 1.0
+ */
 package com.hstm.assignment.flux1;
 
 import java.util.ArrayList;
@@ -55,7 +59,7 @@ public class AddAssignment extends TestBase {
 
 	@FindBy(id = "btnSave")
 	WebElement saveBtn;
-	
+
 	public static WebElement data;
 
 	// Initialization
@@ -73,12 +77,13 @@ public class AddAssignment extends TestBase {
 		addAssignLink.click();
 		assignName.sendKeys(aName);
 		assignDesc.sendKeys(aDesc);
-		
+
 		FrameworkUtil fUtil = new FrameworkUtil();
 		fUtil.jsScrollDown();
 		selectCrsLink.click();
-		String crsName = fUtil.ReadStudentDataFromExcel(
-				"D://javaworkspace//HstmAssignmentFramework//src//main//resources//CourseData.xlsx", 1, 0);
+		String courseDataPath = System.getProperty("user.dir")
+				+ "//src//main//java//com//hstm//assignment//testdata//CourseData.xlsx";
+		String crsName = fUtil.ReadStudentDataFromExcel(courseDataPath, 1, 0);
 		crsSearch.sendKeys(crsName);
 		searchBtn.click();
 		crsSelect.click();
@@ -94,8 +99,8 @@ public class AddAssignment extends TestBase {
 		return aName;
 
 	}
-	
-	public String validateSuccessfulMessage(){
+
+	public String validateSuccessfulMessage() {
 		List<WebElement> list = new ArrayList<WebElement>();
 
 		list = driver.findElements(By.id("uc_validationSummary_s"));
@@ -105,7 +110,7 @@ public class AddAssignment extends TestBase {
 			data = itr.next();
 		}
 		return data.getText().trim();
-		
+
 	}
 
 }

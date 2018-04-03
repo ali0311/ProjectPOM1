@@ -1,0 +1,14 @@
+-------------------------------------------------------------------------------
+Test set: TestSuite
+-------------------------------------------------------------------------------
+Tests run: 3, Failures: 2, Errors: 0, Skipped: 0, Time elapsed: 25.621 sec <<< FAILURE! - in TestSuite
+loginPageTitleTest(com.hstm.assignment.flux1.testcases.AdminLoginPageTest)  Time elapsed: 0.048 sec  <<< FAILURE!
+java.lang.AssertionError: Welcome to HealthStream expected:<Welcome to HealthStream> but was:<Actual Title is not matching with expected Title>
+	at org.testng.AssertJUnit.assertEquals(AssertJUnit.java:101)
+	at com.hstm.assignment.flux1.testcases.AdminLoginPageTest.loginPageTitleTest(AdminLoginPageTest.java:41)
+
+loginTest(com.hstm.assignment.flux1.testcases.AdminLoginPageTest)  Time elapsed: 10.975 sec  <<< FAILURE!
+java.lang.AssertionError: Site Map expected:<Site Map> but was:<Title is not Matching!>
+	at org.testng.AssertJUnit.assertEquals(AssertJUnit.java:101)
+	at com.hstm.assignment.flux1.testcases.AdminLoginPageTest.loginTest(AdminLoginPageTest.java:56)
+

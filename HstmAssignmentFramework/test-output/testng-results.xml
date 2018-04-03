@@ -1,77 +1,41 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="1" ignored="0" total="4" passed="3">
+<testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="59528" started-at="2018-04-02T07:36:01Z" finished-at="2018-04-02T07:37:00Z">
+  <suite name="Default suite" duration-ms="77325" started-at="2018-04-03T13:33:11Z" finished-at="2018-04-03T13:34:28Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="59528" started-at="2018-04-02T07:36:01Z" finished-at="2018-04-02T07:37:00Z">
-      <class name="com.hstm.assignment.flux1.testcases.AddStudentTest">
-        <test-method status="PASS" signature="initialSetUp()[pri:0, instance:com.hstm.assignment.flux1.testcases.AddStudentTest@7f416310]" name="initialSetUp" is-config="true" duration-ms="34207" started-at="2018-04-02T07:36:01Z" finished-at="2018-04-02T07:36:35Z">
+    <test name="Default test" duration-ms="77325" started-at="2018-04-03T13:33:11Z" finished-at="2018-04-03T13:34:28Z">
+      <class name="com.hstm.assignment.flux1.testcases.AddAssignmentTest">
+        <test-method status="PASS" signature="initialSetUp()[pri:0, instance:com.hstm.assignment.flux1.testcases.AddAssignmentTest@5e955596]" name="initialSetUp" is-config="true" duration-ms="59079" started-at="2018-04-03T13:33:11Z" finished-at="2018-04-03T13:34:10Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initialSetUp -->
-        <test-method status="PASS" signature="addStudentDetailsTest()[pri:1, instance:com.hstm.assignment.flux1.testcases.AddStudentTest@7f416310]" name="addStudentDetailsTest" duration-ms="10673" started-at="2018-04-02T07:36:35Z" finished-at="2018-04-02T07:36:46Z">
+        <test-method status="PASS" signature="addAssignmentTest(java.lang.String, java.lang.String)[pri:1, instance:com.hstm.assignment.flux1.testcases.AddAssignmentTest@5e955596]" name="addAssignmentTest" duration-ms="16612" started-at="2018-04-03T13:34:11Z" data-provider="getInfoFromExcel" finished-at="2018-04-03T13:34:27Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Automated Assignment Assigned]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[This Assignment has created for Automation Purpose]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- addStudentDetailsTest -->
-        <test-method status="PASS" signature="addStudentDetailsTest()[pri:1, instance:com.hstm.assignment.flux1.testcases.AddStudentTest@7f416310]" name="addStudentDetailsTest" duration-ms="6340" started-at="2018-04-02T07:36:46Z" finished-at="2018-04-02T07:36:52Z">
+        </test-method> <!-- addAssignmentTest -->
+        <test-method status="PASS" signature="validateSuccessfulMessageTest()[pri:2, instance:com.hstm.assignment.flux1.testcases.AddAssignmentTest@5e955596]" name="validateSuccessfulMessageTest" duration-ms="127" started-at="2018-04-03T13:34:27Z" finished-at="2018-04-03T13:34:27Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- addStudentDetailsTest -->
-        <test-method status="PASS" signature="addStudentDetailsTest()[pri:1, instance:com.hstm.assignment.flux1.testcases.AddStudentTest@7f416310]" name="addStudentDetailsTest" duration-ms="7304" started-at="2018-04-02T07:36:52Z" finished-at="2018-04-02T07:36:59Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- addStudentDetailsTest -->
-        <test-method status="FAIL" signature="successfulStdntAddingTest()[pri:2, instance:com.hstm.assignment.flux1.testcases.AddStudentTest@7f416310]" name="successfulStdntAddingTest" duration-ms="36" started-at="2018-04-02T07:36:59Z" finished-at="2018-04-02T07:37:00Z">
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[Unable to create new Student! expected [The student was saved successfully.] but found [The student was saved. Add another.]]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: Unable to create new Student! expected [The student was saved successfully.] but found [The student was saved. Add another.]
-at org.testng.Assert.fail(Assert.java:96)
-at org.testng.Assert.failNotEquals(Assert.java:776)
-at org.testng.Assert.assertEqualsImpl(Assert.java:137)
-at org.testng.Assert.assertEquals(Assert.java:118)
-at org.testng.Assert.assertEquals(Assert.java:453)
-at com.hstm.assignment.flux1.testcases.AddStudentTest.successfulStdntAddingTest(AddStudentTest.java:59)
-at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-at java.lang.reflect.Method.invoke(Unknown Source)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
-at org.testng.internal.Invoker.invokeMethod(Invoker.java:580)
-at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
-at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-at org.testng.TestRunner.privateRun(TestRunner.java:648)
-at org.testng.TestRunner.run(TestRunner.java:505)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
-at org.testng.SuiteRunner.run(SuiteRunner.java:364)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
-at org.testng.TestNG.runSuites(TestNG.java:1049)
-at org.testng.TestNG.run(TestNG.java:1017)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- successfulStdntAddingTest -->
-        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:com.hstm.assignment.flux1.testcases.AddStudentTest@7f416310]" name="closeBrowser" is-config="true" duration-ms="956" started-at="2018-04-02T07:37:00Z" finished-at="2018-04-02T07:37:00Z">
+        </test-method> <!-- validateSuccessfulMessageTest -->
+        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:com.hstm.assignment.flux1.testcases.AddAssignmentTest@5e955596]" name="closeBrowser" is-config="true" duration-ms="1089" started-at="2018-04-03T13:34:27Z" finished-at="2018-04-03T13:34:28Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeBrowser -->
-      </class> <!-- com.hstm.assignment.flux1.testcases.AddStudentTest -->
+      </class> <!-- com.hstm.assignment.flux1.testcases.AddAssignmentTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

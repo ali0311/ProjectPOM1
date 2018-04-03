@@ -1,3 +1,7 @@
+/*
+ * @Author Ali
+ * @Version 1.0
+ */
 package com.hstm.assignment.flux1;
 
 import java.util.ArrayList;
@@ -95,8 +99,10 @@ public class AddCourse extends TestBase {
 	// Actions	
 
 	public void storeCourseData() throws Exception {
+		
+		String courseDataPath = System.getProperty("user.dir") + "//src//main//java//com//hstm//assignment//testdata//CourseData.xlsx";
 
-		fUtil.WriteCourseDatatoExcel("D://javaworkspace//HstmAssignmentFramework//src//main//resources//CourseData.xlsx");
+		fUtil.WriteCourseDatatoExcel(courseDataPath);
 	}
 	
 

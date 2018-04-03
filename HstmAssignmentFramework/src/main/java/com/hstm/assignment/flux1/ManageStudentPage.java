@@ -1,3 +1,7 @@
+/*
+ * @Author Ali
+ * @Version 1.0
+ */
 package com.hstm.assignment.flux1;
 
 import java.util.ArrayList;
@@ -45,7 +49,8 @@ public class ManageStudentPage extends TestBase {
 		//Read Student Details
 		
 		FrameworkUtil fUtil = new FrameworkUtil();
-		String studentUserId =fUtil.ReadStudentDataFromExcel("D://javaworkspace//HstmAssignmentFramework//src//main//resources//StudentData.xlsx", 1, 0);
+		String studentDataPath = System.getProperty("user.dir") + "//src//main//java//com//hstm//assignment//testdata//StudentData.xlsx";
+		String studentUserId =fUtil.ReadStudentDataFromExcel(studentDataPath, 1, 0);
 		peopleTabLink.click();
 		manageStudentLink.click();
 		System.out.println(studentUserId);

@@ -1,15 +1,52 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
-  <test thread-count="5" name="Default test(failed)">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Sanity Testing- Assignment WorkFlow]">
+  <listeners>
+    <listener class-name="com.hstm.ExtentReportListner.ExtentReporterNG"/>
+  </listeners>
+  <test thread-count="5" name="Add Student(failed)">
     <classes>
       <class name="com.hstm.assignment.flux1.testcases.AddStudentTest">
         <methods>
           <include name="initialSetUp"/>
-          <include name="successfulStdntAddingTest"/>
+          <include name="addStudentDetailsTest"/>
           <include name="closeBrowser"/>
         </methods>
       </class> <!-- com.hstm.assignment.flux1.testcases.AddStudentTest -->
     </classes>
-  </test> <!-- Default test(failed) -->
-</suite> <!-- Failed suite [Default suite] -->
+  </test> <!-- Add Student(failed) -->
+  <test thread-count="5" name="Search Student(failed)">
+    <classes>
+      <class name="com.hstm.assignment.flux1.testcases.ManageStudentPageTest">
+        <methods>
+          <include name="validateUserLabelTest"/>
+          <include name="initialSetUp"/>
+          <include name="closeBrowser"/>
+        </methods>
+      </class> <!-- com.hstm.assignment.flux1.testcases.ManageStudentPageTest -->
+    </classes>
+  </test> <!-- Search Student(failed) -->
+  <test thread-count="5" name="Add Course(failed)">
+    <classes>
+      <class name="com.hstm.assignment.flux1.testcases.AddCourseTest">
+        <methods>
+          <include name="closeBrowser"/>
+          <include name="addCourseDetailTest"/>
+          <include name="initialSetUp"/>
+        </methods>
+      </class> <!-- com.hstm.assignment.flux1.testcases.AddCourseTest -->
+    </classes>
+  </test> <!-- Add Course(failed) -->
+  <test thread-count="5" name="Add Assignment(failed)">
+    <classes>
+      <class name="com.hstm.assignment.flux1.testcases.AddAssignmentTest">
+        <methods>
+          <include name="addAssignmentTest"/>
+          <include name="initialSetUp"/>
+          <include name="validateSuccessfulMessageTest"/>
+          <include name="closeBrowser"/>
+        </methods>
+      </class> <!-- com.hstm.assignment.flux1.testcases.AddAssignmentTest -->
+    </classes>
+  </test> <!-- Add Assignment(failed) -->
+</suite> <!-- Failed suite [Sanity Testing- Assignment WorkFlow] -->

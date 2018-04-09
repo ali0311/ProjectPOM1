@@ -13,6 +13,7 @@ import org.testng.ITestContext;
 import org.testng.ITestResult;
 import org.testng.xml.XmlSuite;
 
+import com.hstm.assignment.util.SendMail;
 import com.relevantcodes.extentreports.ExtentReports;
 import com.relevantcodes.extentreports.ExtentTest;
 import com.relevantcodes.extentreports.LogStatus;
@@ -23,8 +24,8 @@ public class ExtentReporterNG implements IReporter {
 
 	public void generateReport(List<XmlSuite> xmlSuites, List<ISuite> suites,
 			String outputDirectory) {
-		extent = new ExtentReports(outputDirectory + File.separator
-				+ "Extent1.html", true);
+		//extent = new ExtentReports(outputDirectory + File.separator+ "ExtentReport.html", true);
+		extent=new ExtentReports("./Reports/TestReport.html");
 
 		for (ISuite suite : suites) {
 			Map<String, ISuiteResult> result = suite.getResults();
@@ -40,6 +41,8 @@ public class ExtentReporterNG implements IReporter {
 
 		extent.flush();
 		extent.close();
+		
+		
 	}
 
 	private void buildTestNodes(IResultMap tests, LogStatus status) {
@@ -72,4 +75,5 @@ public class ExtentReporterNG implements IReporter {
 		calendar.setTimeInMillis(millis);
 		return calendar.getTime();
 	}
+	
 }

@@ -3,15 +3,18 @@ package com.hstm.assignment.util;
 import org.apache.commons.mail.EmailAttachment;
 import org.apache.commons.mail.EmailException;
 import org.apache.commons.mail.MultiPartEmail;
+import org.testng.annotations.AfterClass;
+import org.testng.annotations.AfterSuite;
 import org.testng.annotations.Test;
 
 public class SendMailReport {
 	
+	@AfterSuite
 	@Test
 	public void sendMailReport(){
 
 	    EmailAttachment attachmentLogs = new EmailAttachment();
-	    attachmentLogs.setPath("D:/javaworkspace/HstmAssignmentFramework/test-output/Extent1.html");
+	    attachmentLogs.setPath("C:/Users/M1032759/git/ProjectPOM1/HstmAssignmentFramework/test-output/ExtentReport.html");
 	    attachmentLogs.setDisposition(EmailAttachment.ATTACHMENT);
 	    attachmentLogs.setDescription("Execution Report");
 	    attachmentLogs.setName("Automated Suite Report");

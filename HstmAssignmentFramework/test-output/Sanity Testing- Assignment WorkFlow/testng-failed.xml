@@ -4,49 +4,17 @@
   <listeners>
     <listener class-name="com.hstm.ExtentReportListner.ExtentReporterNG"/>
   </listeners>
-  <test thread-count="5" name="Add Student(failed)">
+  <test thread-count="5" name="Login Page(failed)">
     <classes>
-      <class name="com.hstm.assignment.flux1.testcases.AddStudentTest">
-        <methods>
-          <include name="initialSetUp"/>
-          <include name="addStudentDetailsTest"/>
-          <include name="closeBrowser"/>
-        </methods>
-      </class> <!-- com.hstm.assignment.flux1.testcases.AddStudentTest -->
-    </classes>
-  </test> <!-- Add Student(failed) -->
-  <test thread-count="5" name="Search Student(failed)">
-    <classes>
-      <class name="com.hstm.assignment.flux1.testcases.ManageStudentPageTest">
-        <methods>
-          <include name="validateUserLabelTest"/>
-          <include name="initialSetUp"/>
-          <include name="closeBrowser"/>
-        </methods>
-      </class> <!-- com.hstm.assignment.flux1.testcases.ManageStudentPageTest -->
-    </classes>
-  </test> <!-- Search Student(failed) -->
-  <test thread-count="5" name="Add Course(failed)">
-    <classes>
-      <class name="com.hstm.assignment.flux1.testcases.AddCourseTest">
+      <class name="com.hstm.assignment.flux1.testcases.AdminLoginPageTest">
         <methods>
           <include name="closeBrowser"/>
-          <include name="addCourseDetailTest"/>
+          <include name="hstmLogoTest"/>
+          <include name="loginPageTitleTest"/>
           <include name="initialSetUp"/>
+          <include name="loginTest"/>
         </methods>
-      </class> <!-- com.hstm.assignment.flux1.testcases.AddCourseTest -->
+      </class> <!-- com.hstm.assignment.flux1.testcases.AdminLoginPageTest -->
     </classes>
-  </test> <!-- Add Course(failed) -->
-  <test thread-count="5" name="Add Assignment(failed)">
-    <classes>
-      <class name="com.hstm.assignment.flux1.testcases.AddAssignmentTest">
-        <methods>
-          <include name="addAssignmentTest"/>
-          <include name="initialSetUp"/>
-          <include name="validateSuccessfulMessageTest"/>
-          <include name="closeBrowser"/>
-        </methods>
-      </class> <!-- com.hstm.assignment.flux1.testcases.AddAssignmentTest -->
-    </classes>
-  </test> <!-- Add Assignment(failed) -->
+  </test> <!-- Login Page(failed) -->
 </suite> <!-- Failed suite [Sanity Testing- Assignment WorkFlow] -->

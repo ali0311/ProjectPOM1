@@ -23,9 +23,9 @@ public class TestBase {
 
 	public static WebDriver driver;
 	public static Properties prop;
-	public static String configPath = System.getProperty("user.dir")
-			+ "//src//main//java//com//hstm//assignment//config//config.properties";
 	public static String currentDir = System.getProperty("user.dir");
+	public static String configPath = currentDir
+			+ "//src//main//java//com//hstm//assignment//config//config.properties";
 	public  static EventFiringWebDriver e_driver;
 	public static WebEventListener eventListener;
 

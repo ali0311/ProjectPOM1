@@ -33,9 +33,10 @@ import com.hstm.assignment.flux1.AddStudent;
 
 public class FrameworkUtil extends TestBase {
 
-	public static int PAGE_LOAD_TIMEOUT = 60;
-	public static int IMPLICIT_WAIT = 60;
-	public static String TESTDATA_SHEET_PATH = System.getProperty("user.dir") + "//src//main///java//com//hstm//assignment//testdata//AssignmentData.xlsx";
+	public static int PAGE_LOAD_TIMEOUT = 30;
+	public static int IMPLICIT_WAIT = 30;
+	public static String TESTDATA_SHEET_PATH = System.getProperty("user.dir")
+			+ "//src//main///java//com//hstm//assignment//testdata//AssignmentData.xlsx";
 
 	Faker faker = new Faker();
 
@@ -98,8 +99,8 @@ public class FrameworkUtil extends TestBase {
 		wb.write(fout);
 
 	}
-	
-	public void WriteCourseDatatoExcel(String path) throws Exception{
+
+	public void WriteCourseDatatoExcel(String path) throws Exception {
 		FileInputStream fis = new FileInputStream(path);
 
 		XSSFWorkbook wb = new XSSFWorkbook(fis); // Access the workbook
@@ -111,7 +112,7 @@ public class FrameworkUtil extends TestBase {
 
 		FileOutputStream fout = new FileOutputStream(path);
 		wb.write(fout);
-		
+
 	}
 
 	public String ReadStudentDataFromExcel(String path, int row, int col) throws Exception {
@@ -146,13 +147,13 @@ public class FrameworkUtil extends TestBase {
 		String reqDate = dateFormat.format(cal.getTime());
 		return reqDate;
 	}
-	
+
 	public static void takeScreenshotAtEndOfTest() throws IOException {
 		File scr = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
 		FileUtils.copyFile(scr, new File(currentDir + "/screenshots/" + System.currentTimeMillis() + ".png"));
-		
-		}
-	
+
+	}
+
 	public Object[][] getTestData(String sheetName) {
 		FileInputStream file = null;
 		Workbook book = null;
@@ -177,9 +178,36 @@ public class FrameworkUtil extends TestBase {
 			}
 		}
 		return data;
-		
-		
+
 	}
+
+	//Send Extent Report to given Mail Id
 	
+	public void sendMailReport() {
+
+		EmailAttachment attachmentLogs = new EmailAttachment();
+		attachmentLogs.setPath("C:/Users/M1032759/git/ProjectPOM1/HstmAssignmentFramework/Reports/TestReport.html");
+		attachmentLogs.setDisposition(EmailAttachment.ATTACHMENT);
+		attachmentLogs.setDescription("Execution Report");
+		attachmentLogs.setName("Automated Suite Report");
+
+		try {
+			MultiPartEmail email = new MultiPartEmail();
+			// email.setDebug(debug);
+			email.setHostName("smtp.gmail.com");
+			email.addTo("Md.khan@mindtree.com");
+			email.setFrom("testali031993@gmail.com", "Me");
+			email.setAuthentication("testali031993@gmail.com", "Mind@123");
+			email.setSubject("Automated Script Report");
+			email.setMsg("Hi Ali,\n" + "Please refer to attached Execution Report.\n\n" + "Thanks!\n\n\n"
+					+ "This is Automated generated mail, please don't reply.");
+			email.setSSL(true);
+			email.attach(attachmentLogs);
+			email.send();
+		} catch (EmailException e) {
+			System.out.println(e.getMessage());
+		}
+		System.out.println("Attachment sends");
+
 	}
-	
+}

@@ -1,15 +1,15 @@
-2018-04-07 18:25:51,956  INFO [main] AdminLoginPageTest:30 - ********Initializing*******
-2018-04-07 18:26:19,520  INFO [main] AdminLoginPageTest:38 - ********Test Title_TC#1*******
-2018-04-07 18:26:19,539  INFO [main] AdminLoginPageTest:45 - ********Test Logo_TC#2*******
-2018-04-07 18:26:19,629  INFO [main] AdminLoginPageTest:52 - ********Login to Home Page_TC#3*******
-2018-04-07 18:26:37,654  INFO [main] AdminLoginPageTest:61 - ********Closing Browser...New class AdminHomePage Test Begins*******
-2018-04-07 18:26:39,173 DEBUG [main] cache:45 - Couldn't find template in cache for "Extent.ftl"("en_US", UTF-8, parsed); will try to load it.
-2018-04-07 18:26:39,176 DEBUG [main] cache:45 - TemplateLoader.findTemplateSource("Extent_en_US.ftl"): Not found
-2018-04-07 18:26:39,179 DEBUG [main] cache:45 - TemplateLoader.findTemplateSource("Extent_en.ftl"): Not found
-2018-04-07 18:26:39,182 DEBUG [main] cache:45 - TemplateLoader.findTemplateSource("Extent.ftl"): Found
-2018-04-07 18:26:39,183 DEBUG [main] cache:45 - Loading template for "Extent.ftl"("en_US", UTF-8, parsed) from "jar:file:/C:/Users/M1032759/.m2/repository/com/relevantcodes/extentreports/2.41.2/extentreports-2.41.2.jar!/com/relevantcodes/extentreports/view/Extent.ftl"
-2018-04-07 18:26:39,673 DEBUG [main] cache:45 - Couldn't find template in cache for "Extent.ftl"("en_US", UTF-8, parsed); will try to load it.
-2018-04-07 18:26:39,674 DEBUG [main] cache:45 - TemplateLoader.findTemplateSource("Extent_en_US.ftl"): Not found
-2018-04-07 18:26:39,674 DEBUG [main] cache:45 - TemplateLoader.findTemplateSource("Extent_en.ftl"): Not found
-2018-04-07 18:26:39,675 DEBUG [main] cache:45 - TemplateLoader.findTemplateSource("Extent.ftl"): Found
-2018-04-07 18:26:39,676 DEBUG [main] cache:45 - Loading template for "Extent.ftl"("en_US", UTF-8, parsed) from "jar:file:/C:/Users/M1032759/.m2/repository/com/relevantcodes/extentreports/2.41.2/extentreports-2.41.2.jar!/com/relevantcodes/extentreports/view/Extent.ftl"
+2018-04-12 12:11:37,136  INFO [main] AdminLoginPageTest:30 - ********Initializing*******
+2018-04-12 12:11:55,641  INFO [main] AdminLoginPageTest:38 - ********Test Title_TC#1*******
+2018-04-12 12:11:55,663  INFO [main] AdminLoginPageTest:45 - ********Test Logo_TC#2*******
+2018-04-12 12:11:55,740  INFO [main] AdminLoginPageTest:52 - ********Login to Home Page_TC#3*******
+2018-04-12 12:12:01,253  INFO [main] AdminLoginPageTest:61 - ********Closing Browser...New class AdminHomePage Test Begins*******
+2018-04-12 12:12:03,285 DEBUG [main] cache:45 - Couldn't find template in cache for "Extent.ftl"("en_US", UTF-8, parsed); will try to load it.
+2018-04-12 12:12:03,287 DEBUG [main] cache:45 - TemplateLoader.findTemplateSource("Extent_en_US.ftl"): Not found
+2018-04-12 12:12:03,289 DEBUG [main] cache:45 - TemplateLoader.findTemplateSource("Extent_en.ftl"): Not found
+2018-04-12 12:12:03,291 DEBUG [main] cache:45 - TemplateLoader.findTemplateSource("Extent.ftl"): Found
+2018-04-12 12:12:03,291 DEBUG [main] cache:45 - Loading template for "Extent.ftl"("en_US", UTF-8, parsed) from "jar:file:/C:/Users/M1032759/.m2/repository/com/relevantcodes/extentreports/2.41.2/extentreports-2.41.2.jar!/com/relevantcodes/extentreports/view/Extent.ftl"
+2018-04-12 12:12:03,615 DEBUG [main] cache:45 - Couldn't find template in cache for "Extent.ftl"("en_US", UTF-8, parsed); will try to load it.
+2018-04-12 12:12:03,616 DEBUG [main] cache:45 - TemplateLoader.findTemplateSource("Extent_en_US.ftl"): Not found
+2018-04-12 12:12:03,617 DEBUG [main] cache:45 - TemplateLoader.findTemplateSource("Extent_en.ftl"): Not found
+2018-04-12 12:12:03,617 DEBUG [main] cache:45 - TemplateLoader.findTemplateSource("Extent.ftl"): Found
+2018-04-12 12:12:03,617 DEBUG [main] cache:45 - Loading template for "Extent.ftl"("en_US", UTF-8, parsed) from "jar:file:/C:/Users/M1032759/.m2/repository/com/relevantcodes/extentreports/2.41.2/extentreports-2.41.2.jar!/com/relevantcodes/extentreports/view/Extent.ftl"

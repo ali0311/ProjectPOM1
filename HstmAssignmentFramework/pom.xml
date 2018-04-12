@@ -133,7 +133,9 @@
 			<configuration>
 				<suiteXmlFiles>
 					<!-- TestNG suite XML files -->
-					<suiteXmlFile>TestNGAssignmentWorkFlow.xml</suiteXmlFile>
+					
+					<!--  <suiteXmlFile>TestNGAssignmentWorkFlow.xml</suiteXmlFile> -->
+					<suiteXmlFile>TestNGAssignmentTest.xml</suiteXmlFile>
 				</suiteXmlFiles>
 			</configuration>
 		 </plugin>

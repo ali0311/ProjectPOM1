@@ -2,7 +2,7 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="Sanity Testing- Assignment WorkFlow"> 
 
-	<listeners>
+<listeners>
 		<listener class-name="com.hstm.ExtentReportListner.ExtentReporterNG" />
 	</listeners>
 	
@@ -12,13 +12,8 @@
 		</classes>
 	</test>
 	
-	<test name="Send Mail">
-		<classes>
-			<class name="com.hstm.assignment.util.SendMail" />
-		</classes>
-	</test>
-	
 </suite>
+
 
 
 
